@@ -20,6 +20,8 @@ st.markdown("""
     [this page](https://github.com/IUNetSci/botometer-python) for setting
     up the credentials.
 
+    [Github repo](https://github.com/presstofan/twitter-bot-checker)
+
     **Step 1:** Select the JSON file that contains the Twitter and
     Botometer credentials. credentials.json is a template of credential file,
     which can be found with the app. Credential loaded will be cached for later
