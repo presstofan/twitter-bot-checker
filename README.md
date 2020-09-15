@@ -6,6 +6,8 @@ A Streamlit app that retrieves all the followers of a Twitter account and use [B
 
 ### Download and set up the Streamlit app
 
+The app is built with Python 3.7.4 (Although other Python versions such as 3.7.x and 3.6.x should also work). **It is easier to start fresh with a new virtual environment**, then running:
+
 ```{sh}
 git clone https://github.com/presstofan/twitter-bot-checker
 cd twitter-bot-checker
