@@ -1,6 +1,6 @@
 # Twitter Bot Checker Powered by Botometer
 
-A Streamlit app that retrieves all the followers of a Twitter account and use [Botometer API](https://botometer.osome.iu.edu/) to check for bots.
+A Streamlit app that retrieves all the followers of a Twitter account and use [Botometer API](https://botometer.osome.iu.edu/) to check for bots. This is essentially a wrapper over the official `botometer` python library, with a basic user interface powered by Streamlit and SQLite database to store the results.
 
 ![Demo Animation](https://github.com/presstofan/twitter-bot-checker/blob/master/app-demo.gif?raw=true "Demo Animation")
 
