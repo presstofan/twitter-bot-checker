@@ -398,8 +398,13 @@ def check_bot(screen_name, bom):
                                   "skipping bot check...")
             check_action = "skip"
             return(result, check_action)
+        elif "does not exist" in error_text:
+            st.text(screen_name + " does not exist, "
+                                  "skipping bot check...")
+            check_action = "skip"
+            return(result, check_action)
         else:
-            st.error("Other Tweepy error: ", error_text)
+            st.error("Other Tweepy error: " + error_text)
             raise
 
     except botometer.NoTimelineError:
@@ -409,7 +414,7 @@ def check_bot(screen_name, bom):
         return(result, check_action)
 
     except Exception:
-        st.error("Unexpected error:", sys.exc_info()[0])
+        st.error("Unexpected error:" + sys.exc_info()[0])
         raise
 
 
