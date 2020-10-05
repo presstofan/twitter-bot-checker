@@ -464,9 +464,9 @@ def check_bot_button(user_name, days_to_keep, account_cap):
 
     is_expired = followers_df["expired"]
     is_not_blocked = followers_df["last_check_status"] != "blocked"
-    followers_to_check = followers_df[is_expired
-                                      & is_not_blocked]["screen_name"]
-    N = sum(is_expired)
+    to_be_checked = is_expired & is_not_blocked
+    followers_to_check = followers_df[to_be_checked]["screen_name"]
+    N = sum(to_be_checked)
 
     if N > 500:
         st.warning("You have more than 500 followers to check. "
